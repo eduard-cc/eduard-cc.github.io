@@ -1,0 +1,162 @@
+:root {
+    --color-background: hsl(220, 14%, 16%);
+    --color-secondary: hsla(219, 9%, 50%, 0.5);
+    --color-link: #ead0d0;
+    --text-main: #e8e8e8;
+}
+
+html::-webkit-scrollbar {
+    width: 0.6vw;
+}
+html::-webkit-scrollbar-thumb {
+    background-color: var(--color-secondary);
+    border-radius: 1vw;
+}
+html::-webkit-scrollbar-thumb:hover {
+    background-color: hsl(219, 9%, 50%);
+}
+html::-webkit-scrollbar-track {
+    background-color: var(--color-background);
+    margin-block: 0.5em;
+}
+
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    background-color: var(--color-background);
+    background-image: url(/static/noise.png);
+    background-position: 0 0;
+    background-size: 200px 200px;
+    margin: auto;
+    color: white;
+    line-height: 1.5;
+    font-size: 1rem;
+    padding-inline: 1rem;
+    max-width: 46rem;
+    margin-bottom: 2rem;
+}
+
+b, h1, h2, h3, h4, h5, h6, strong, th {
+    font-weight: 600;
+}
+
+p, li, a {
+    color: var(--text-main);
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+svg {
+    width: 1em;
+    height: 1em;
+    margin-bottom: -0.125em;
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    color: var(--color-link);
+}
+    a > svg {
+        margin-inline: 0.125em;
+    }
+    a::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: var(--color-link);
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+    a:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+
+.languages {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+.csharp {
+    color: #53b33f;
+}
+.html {
+    color: #dc7055;
+}
+.js {
+    color: #e4d66d;
+}
+.css {
+    color: #9974d0;
+}
+.aspnet {
+    color: #b26bca;
+}
+.winforms {
+    color: #a0b1d7;
+}
+.react {
+    color: #75cfd2;
+}
+.nodejs {
+    color: #6bca79;
+}
+
+.projects-section {
+    display: grid;
+    gap: 2rem;
+}
+
+.project {
+    border: 1px solid var(--color-secondary);
+    border-radius: 3px;
+    padding: 2rem;
+    background-color: hsl(220, 14%, 16%);
+}
+
+.project-info {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+    .project-info h3 {
+        margin-top: 0;
+    }
+    .project-info .project-links {
+        display: flex;
+        gap: 2rem;
+    }
+
+.contact a {
+    margin-right: 1rem;
+}
+
+@media (max-width: 750px) {
+    .project-info img {
+        display: none;
+    }
+}
+
+@media (max-width: 550px) {
+    .languages {
+        gap: 1em;
+    }
+    .project {
+        padding: 1rem;
+    }
+    .project-info .project-links {
+        gap: 1rem;
+        font-size: 0.9rem;
+    }
+}
