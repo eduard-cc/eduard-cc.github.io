@@ -1,0 +1,51 @@
+[
+  {
+    "title": "Netpick",
+    "subtitle": "A toolkit for network recon and MITM attacks.",
+    "description": "This application features host discovery, port and OS scanning, ARP spoofing and event-driven communication with its web UI via WebSocket.",
+    "links": [
+      {
+        "text": "Web UI source code",
+        "url": "https://github.com/eduard-cc/netpick-web"
+      },
+      {
+        "text": "API source code",
+        "url": "https://github.com/eduard-cc/netpick-api"
+      }
+    ],
+    "techStack": ["React", "Python", "FastAPI"]
+  },
+  {
+    "title": "Boards",
+    "subtitle": "A web application for project management and collaboration.",
+    "description": "Featuring a REST API with JWT authentication, this platform provides a solution for teams and individuals to manage their projects and tasks.",
+    "links": [
+      {
+        "text": "Live website",
+        "url": "https://eduard-cc.github.io/boards-web"
+      },
+      {
+        "text": "Web app source code",
+        "url": "https://github.com/eduard-cc/boards-web"
+      },
+      {
+        "text": "API source code",
+        "url": "https://github.com/eduard-cc/boards-api"
+      }
+    ],
+    "techStack": ["React", "Java", "Spring Boot", "MySQL"]
+  },
+  {
+    "title": "Job Portal",
+    "subtitle": "A platform for posting, searching and applying to jobs.",
+    "description": "Using a monolithic architecture, this application enables employers to post and manage their job listings, and job seekers to search and apply.",
+    "links": [
+      { "text": "Live website", "url": "https://i505281.luna.fhict.nl/" },
+      {
+        "text": "Source code",
+        "url": "https://github.com/eduard-cc/job-portal"
+      }
+    ],
+    "techStack": ["C#", "ASP.NET Core Razor Pages", "MSSQL"]
+  }
+]
