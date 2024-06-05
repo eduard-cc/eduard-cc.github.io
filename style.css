@@ -13,22 +13,22 @@
 ::-webkit-scrollbar-track {
   background: #fbfbfb;
 }
-body.dark::-webkit-scrollbar-track {
-  background: #0c0a09;
-}
+  body.dark::-webkit-scrollbar-track {
+    background: #0c0a09;
+  }
 ::-webkit-scrollbar-thumb {
   background: #a8a29e;
   border-radius: 5px;
 }
-body.dark::-webkit-scrollbar-thumb {
-  background: #44403c;
-}
+  body.dark::-webkit-scrollbar-thumb {
+    background: #44403c;
+  }
 ::-webkit-scrollbar-thumb:hover {
   background: #78716c;
 }
-body.dark::-webkit-scrollbar-thumb:hover {
-  background: #57534e;
-}
+  body.dark::-webkit-scrollbar-thumb:hover {
+    background: #57534e;
+  }
 
 html {
   font-family: "Manrope", sans-serif;
@@ -62,14 +62,9 @@ main {
 }
 
 .dot-mask {
-  position: fixed;
   left: 0;
   top: 0;
-  z-index: -10;
 }
-  .dot-mask div {
-    position: relative;
-  }
 
 .dot-pattern {
   position: absolute;
@@ -159,15 +154,16 @@ a {
   justify-content: space-between;
   margin: 10vh 0 2rem;
 }
-  .header h1,
-  .header p,
-  .project-card h3,
-  .project-card p {
-    margin: 0;
-  }
   .header p {
     margin-top: 0.5rem;
   }
+
+.header h1,
+.header p,
+.project-card h3,
+.project-card p {
+  margin: 0;
+}
 
 button {
   background-color: #fafaf9;
@@ -267,9 +263,9 @@ button {
 .mssql {
   background-color: #a8a29e;
 }
-body.dark .mssql {
-  background-color: #78716c;
-}
+  body.dark .mssql {
+    background-color: #78716c;
+  }
 
 footer {
   display: flex;
