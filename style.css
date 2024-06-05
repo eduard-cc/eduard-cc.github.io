@@ -93,7 +93,9 @@ h3 {
 .links {
   display: flex;
   gap: 2rem;
+  flex-wrap: wrap;
 }
+
 a {
   text-decoration: underline;
   text-decoration-color: #a8a29e;
@@ -133,6 +135,7 @@ body.dark .text-muted {
   max-width: 36rem;
   padding-inline: 1rem;
 }
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -275,5 +278,26 @@ footer svg {
   margin: 0;
 }
 footer span {
-  margin-left: 0.25rem;
+  margin-left: 0.5rem;
+}
+
+@media (max-width: 640px) {
+  footer {
+    margin-block: 2rem;
+  }
+  .header {
+    margin-top: 2rem;
+  }
+  section {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    margin-top: 5vh;
+  }
+  .project-card .links {
+    gap: 1rem;
+  }
 }
