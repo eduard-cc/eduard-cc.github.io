@@ -4,11 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>Eduard Ciociu</title>
   </head>
   <body>
-    <div class="grid">
-      <div class="content">
+    <div class="dot-mask">
+      <div class="dot-mask">
+        <div class="dot-pattern"></div>
+      </div>
+    </div>
+    <main>
+      <div class="content" style="position: relative">
         <div class="header">
           <div>
             <h1>Eduard Ciociu</h1>
@@ -113,63 +118,16 @@
         </section>
         <section>
           <h2>Projects</h2>
-          <div class="project-card">
-            <div class="project-content">
-              <h3>Netpick</h3>
-              <p>A toolkit for network recon and MITM attacks.</p>
-              <p class="text-muted">
-                This Dockerized application features host discovery, port and OS
-                scanning, ARP spoofing and event-driven communication with its
-                web UI via WebSocket.
-              </p>
-              <div class="links">
-                <a class="text-muted">
-                  <span>Web UI source code</span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="lucide lucide-arrow-up-right"
-                  >
-                    <path d="M7 7h10v10" />
-                    <path d="M7 17 17 7" />
-                  </svg>
-                </a>
-                <a class="text-muted">
-                  <span>API source code</span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="lucide lucide-arrow-up-right"
-                  >
-                    <path d="M7 7h10v10" />
-                    <path d="M7 17 17 7" />
-                  </svg>
-                </a>
-              </div>
-              <div class="tech-stack text-muted text-xs">
-                <span class="dot react"></span><span>React</span>
-                <span class="dot python"></span><span>Python</span>
-                <span class="dot fastapi"></span><span>FastAPI</span>
-              </div>
-            </div>
-          </div>
+          <div class="projects"></div>
         </section>
+        <footer class="text-xs text-muted">
+          <a href="https://eduard-cc.github.io" class="text-muted">
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copyright"><circle cx="12" cy="12" r="10"/><path d="M14.83 14.83a4 4 0 1 1 0-5.66"/></svg>
+            <span>Eduard Ciociu, 2024</span>
+          </a>
+        </footer>
       </div>
-    </div>
+    </ma>
   </body>
   <script src="script.js"></script>
 </html>
