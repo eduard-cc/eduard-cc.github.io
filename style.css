@@ -149,6 +149,13 @@ a {
   padding-inline: 1rem;
 }
 
+.header h1,
+.header p,
+.project-card h3,
+.project-card p {
+  margin: 0;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -157,13 +164,6 @@ a {
   .header p {
     margin-top: 0.5rem;
   }
-
-.header h1,
-.header p,
-.project-card h3,
-.project-card p {
-  margin: 0;
-}
 
 button {
   background-color: #fafaf9;
