@@ -7,6 +7,32 @@
   --bg-color-dark: #0c0a09;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fbfbfb;
+}
+body.dark::-webkit-scrollbar-track {
+  background: #0c0a09;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a8a29e;
+  border-radius: 5px;
+}
+body.dark::-webkit-scrollbar-thumb {
+  background: #44403c;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #78716c;
+}
+body.dark::-webkit-scrollbar-thumb:hover {
+  background: #57534e;
+}
+
 html {
   font-family: "Manrope", sans-serif;
   font-optical-sizing: auto;
@@ -271,7 +297,7 @@ body.dark .mssql {
 footer {
   display: flex;
   align-items: center;
-  margin-top: 3rem;
+  margin-top: 10vh;
   margin-bottom: 2rem;
 }
 footer svg {
@@ -295,6 +321,9 @@ footer span {
 
 @media (max-width: 768px) {
   .header {
+    margin-top: 5vh;
+  }
+  footer {
     margin-top: 5vh;
   }
   .project-card .links {
