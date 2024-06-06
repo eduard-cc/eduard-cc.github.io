@@ -1,4 +1,6 @@
-if (
+if (localStorage.getItem("theme")) {
+  document.body.classList.add(localStorage.getItem("theme"));
+} else if (
   window.matchMedia &&
   window.matchMedia("(prefers-color-scheme: dark)").matches
 ) {
@@ -7,6 +9,12 @@ if (
 
 document.getElementById("theme-toggle").addEventListener("click", function () {
   document.body.classList.toggle("dark");
+
+  let theme = "light";
+  if (document.body.classList.contains("dark")) {
+    theme = "dark";
+  }
+  localStorage.setItem("theme", theme);
 });
 
 fetch("projects.json")
